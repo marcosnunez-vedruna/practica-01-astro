@@ -1,0 +1,34 @@
+---
+const {title, href, bgImage} = Astro.props;
+---
+<a href=`${href}` class="mitad" style={`background-image: url(${bgImage});`}>
+    <h1>{title}</h1>
+</a>
+
+<style>
+    .mitad {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .mitad h1 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 5em;
+        font-weight: 700;
+        transform: rotate(-90deg);
+        transition: 0.5s ease-in-out;
+    }
+
+    .mitad:hover h1 {
+        letter-spacing: 10px;
+        color: #39810d;
+    }
+</style>
