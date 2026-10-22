@@ -1,12 +1,8 @@
 ---
-import NavBar from './NavBar.astro';
-
 const {bgImage, subtitulo} = Astro.props;
 ---
 
-<header class="header" id="header" style={`background-image: url(${bgImage});`}>
-  <NavBar />
-  
+<header class="header" id="header" style={`background-image: url(${bgImage});`}>  
   <div class="rebajas">
     <h1>Rebajas</h1>
     <h3>{subtitulo}</h3>
@@ -34,7 +30,7 @@ const {bgImage, subtitulo} = Astro.props;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    color: white;
+    color: #f0f0f0;
   }
 
   .rebajas h1 {

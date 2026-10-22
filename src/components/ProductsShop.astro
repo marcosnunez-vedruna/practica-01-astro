@@ -1,20 +1,30 @@
 ---
 import ArticuloCard from './ArticuloCard.astro';
-import json from '../data/articulos.json'
 
+interface Product {
+  titulo: string;
+  precio: string;
+  imagen: string;
+}
+
+interface Props {
+  products: Product[];
+}
+
+const { products = [] } = Astro.props;
 ---
 
 <section class="ropa">
   <div class="principio">
-    <img src="/img/logo_marca.png" alt="logo-marca" />
+    <img src="public\logo_marca.png" alt="logo-marca" />
     <div class="buscar">
-      <img src="/img/busqueda-de-lupa.png" alt="buscar" />
+      <img src="public\busqueda-de-lupa.png" alt="buscar" />
       <input type="text" name="buscar" id="buscar" placeholder="Buscar" />
     </div>
   </div>
 
   <div class="cards">
-    {json.map((item) => (
+    {products.map((item) => (
       <ArticuloCard 
         titulo={item.titulo} 
         precio={item.precio} 
