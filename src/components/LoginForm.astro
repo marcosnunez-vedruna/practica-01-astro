@@ -1,0 +1,109 @@
+---
+---
+<section class="log-in">
+    <img src="public\logo_marca.png" alt="logo-marca" class="logo-marca">
+    
+    <h1 class="titulo">Welcome Back</h1>
+
+    <form action="#" class="formulario">
+        <input type="text" name="user" id="user" placeholder="User">
+        <input type="password" name="password" id="password" placeholder="Password">
+    </form>
+
+    <div class="botones">
+        <a href="select" class="button-log-in">
+            Log in
+        </a>
+        <a href="select" class="button-google">
+            <img src="public\logo_google.png" alt="logo-google">
+            Log in with google
+        </a>
+    </div>
+</section>
+
+<style>
+.log-in {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.log-in .logo-marca {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.log-in .titulo {
+    font-weight: 400;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.log-in .formulario {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.log-in .formulario input {
+    padding: 10px;
+    border: 1px solid #cdcaca;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.log-in .formulario input::placeholder {
+    color: #cdcaca;
+}
+
+.log-in .botones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.log-in .botones a {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 20px;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+.log-in .botones a:nth-of-type(1):hover {
+    border: 1px solid #1c3e06;
+    color: #1c3e06;
+}
+
+.log-in .botones a:nth-of-type(2):hover {
+    border: 1px solid #39810d;
+    color: #39810d;
+}
+
+.log-in .botones .button-log-in {
+    background-color: #39810d;
+    color: white;
+}
+
+.log-in .botones .button-google {
+    border: 1px solid #cdcaca;
+    background-color: #f5f5f5;
+    color: #cdcaca;
+}
+
+.log-in .botones .button-google img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+</style>

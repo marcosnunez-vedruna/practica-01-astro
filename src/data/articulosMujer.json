@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "titulo": "Abrigo largo pliegue espalda",
+    "precio": "59,99 €",
+    "imagen": "/articulo01.png"
+  },
+  {
+    "id": 2,
+    "titulo": "Abrigo largo pliegue pecho",
+    "precio": "59,99 €",
+    "imagen": "/articulo02.png"
+  },
+  {
+    "id": 3,
+    "titulo": "Abrigo acolchado extralargo",
+    "precio": "49,99 €",
+    "imagen": "/articulo01.png"
+  },
+  {
+    "id": 4,
+    "titulo": "Gabardina vaquera",
+    "precio": "69,99 €",
+    "imagen": "/articulo02.png"
+  },
+  {
+    "id": 5,
+    "titulo": "Abrigo paño",
+    "precio": "29,99 €",
+    "imagen": "/articulo01.png"
+  },
+  {
+    "id": 6,
+    "titulo": "Abrigo acolchado capucha",
+    "precio": "49,99 €",
+    "imagen": "/articulo02.png"
+  },
+  {
+    "id": 7,
+    "titulo": "Abrigo borreguillo",
+    "precio": "19,99 €",
+    "imagen": "/articulo01.png"
+  },
+  {
+    "id": 8,
+    "titulo": "Jeans skinny rotos",
+    "precio": "9,99 €",
+    "imagen": "/articulo02.png"
+  }
+]
