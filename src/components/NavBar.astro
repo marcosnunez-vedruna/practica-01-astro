@@ -1,0 +1,71 @@
+---
+---
+
+<nav class="nav-bar">
+  <ul>
+    <li><a href="#header" class="subrayado">Home</a></li>
+    <li><a href="/select">Shop</a></li>
+  </ul>
+  <div class="user">
+    <p>User_name</p>
+    <a href="/"><img src="/img/user-image.png" alt="user-image" /></a>
+  </div>
+</nav>
+
+<style>
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+    color: gray;
+    font-size: 1.35em;
+    z-index: 100;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .nav-bar ul li a {
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    color: gray;
+    text-decoration: none;
+  }
+
+  .nav-bar ul li a:hover {
+    color: #39810d;
+  }
+
+  .nav-bar ul li .subrayado {
+    text-decoration: underline;
+  }
+
+  .nav-bar .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-bar .user a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar .user a img {
+    width: 35px;
+    height: 35px;
+  }
+</style>
