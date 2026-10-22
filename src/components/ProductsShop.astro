@@ -1,0 +1,86 @@
+---
+import ArticuloCard from './ArticuloCard.astro';
+import json from '../data/articulos.json'
+
+---
+
+<section class="ropa">
+  <div class="principio">
+    <img src="/img/logo_marca.png" alt="logo-marca" />
+    <div class="buscar">
+      <img src="/img/busqueda-de-lupa.png" alt="buscar" />
+      <input type="text" name="buscar" id="buscar" placeholder="Buscar" />
+    </div>
+  </div>
+
+  <div class="cards">
+    {json.map((item) => (
+      <ArticuloCard 
+        titulo={item.titulo} 
+        precio={item.precio} 
+        imagen={item.imagen} 
+      />
+    ))}
+  </div>
+</section>
+
+<style>
+  .ropa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ropa .principio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 50px;
+    width: 100%;
+  }
+
+  .ropa .principio img {
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .ropa .principio .buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 120px;
+    border: 2px solid #cdcaca;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .ropa .principio .buscar img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ropa .principio .buscar input {
+    border: none;
+    outline: none;
+  }
+
+  .ropa .principio .buscar input::placeholder {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+  }
+
+  .ropa .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+</style>
