@@ -1,0 +1,59 @@
+---
+const {bgImage, subtitulo} = Astro.props;
+---
+
+<header class="header" id="header" style={`background-image: url(${bgImage});`}>  
+  <div class="rebajas">
+    <h1>Rebajas</h1>
+    <h3>{subtitulo}</h3>
+    <div class="porcentajes">
+      <p>-10%</p>
+      <p>-20%</p>
+      <p>-30%</p>
+      <p>-40%</p>
+      <p>-50%</p>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .rebajas {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #f0f0f0;
+  }
+
+  .rebajas h1 {
+    font-size: 6em;
+    text-transform: uppercase;
+  }
+
+  .rebajas h3 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .rebajas .porcentajes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 20px;
+  }
+
+  .rebajas .porcentajes p {
+    font-size: 3em;
+  }
+</style>

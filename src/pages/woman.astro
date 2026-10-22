@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeaderShop from '../components/HeaderShop.astro';
+import ProductsShop from '../components/ProductsShop.astro';
+import NavBar from '../components/NavBar.astro';
+
+import json from '../data/articulosMujer.json';
+---
+
+<Layout title="Woman Clothing Store">
+    <main class="shop-container">
+        <NavBar />
+        
+        <HeaderShop 
+            subtitulo="Mirto mujer" 
+            bgImage="/public/bg_shop_mujer.png" 
+        />
+        <ProductsShop 
+            products={json} 
+        />
+    </main>
+</Layout>
+
+<style>
+  .shop-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+</style>
